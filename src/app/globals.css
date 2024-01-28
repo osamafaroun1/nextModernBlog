@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.banner {
+  background-color: #8a2ce2;
+  border-radius: 6px;
+  clip-path: polygon(52% 0, 100% 0%, 100% 100%, 43% 100%);
+}
+
+.btn {
+  @apply bg-black text-white px-3 py-2 rounded hover:bg-white hover:text-blue-700 transition-all duration-500;
+}
+
+@media screen and (max-width: 576px) {
+  .banner {
+    clip-path: none;
+  }
+}
